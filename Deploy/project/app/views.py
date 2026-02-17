@@ -26,7 +26,13 @@ import time
 from  joblib import load
 
 
-model = joblib.load('C:/Users/krish/Downloads/Final Year Project/Deploy/project/app/ccyber.pkl')
+import os
+import joblib
+from django.conf import settings
+
+MODEL_PATH = os.path.join(settings.BASE_DIR, "app", "ccyber.pkl")
+model = joblib.load(MODEL_PATH)
+
 
 Model = model
 
