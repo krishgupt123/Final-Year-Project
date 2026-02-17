@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5tdkbo02+#!hu&(-1+_1zmy11ok_lf=ok1$78gos0w=8_gwj5f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -118,7 +119,7 @@ USE_TZ = True
 
 
 STATIC_URL = "static/"
-STATIC_ROOT = (os.path.join(BASE_DIR, 'static'))
+STATIC_ROOT = (os.path.join(BASE_DIR, 'staticfiles'))
 
 
 # Default primary key field type
