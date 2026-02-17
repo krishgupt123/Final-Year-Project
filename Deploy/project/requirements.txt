@@ -1,7 +1,7 @@
 Django>=4.2,<6
 gunicorn
 whitenoise
-numpy
+numpy<2
 pandas
 scikit-learn
 matplotlib
