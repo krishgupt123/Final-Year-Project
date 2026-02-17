@@ -5,6 +5,6 @@ numpy<2
 pandas
 scikit-learn
 matplotlib
-tensorflow
+tensorflow==2.16.1
 joblib
 catboost
