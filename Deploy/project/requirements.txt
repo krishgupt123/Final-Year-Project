@@ -1,0 +1,10 @@
+Django>=4.2,<6
+gunicorn
+whitenoise
+numpy
+pandas
+scikit-learn
+matplotlib
+tensorflow
+joblib
+catboost
